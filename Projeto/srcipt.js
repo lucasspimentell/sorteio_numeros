@@ -16,6 +16,7 @@ const numeroSorteado1 = Math.floor(Math.random()*numeros.length);
 
 
 botao.addEventListener("click",()=>{
+    botao.disabled = true
    numero.innerHTML="⏳"
 
    setTimeout(()=>{
@@ -24,6 +25,8 @@ botao.addEventListener("click",()=>{
 
    setTimeout(()=>{
     sorteio(0,1,2,3,4,5,6,7,8,9)
+    botao.disabled = false;
+    
 },3000);
 
 console.log("apertou")
