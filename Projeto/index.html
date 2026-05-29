@@ -4,25 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <script src="srcipt.js" defer></script>
-    <link rel="shortcut icon" href="🎲" type="image/x-icon">
+    <link rel="shortcut icon" href="cassino.png" type="image/x-icon">
     <title>Número da Sorte</title>
 </head>
 <body>
     
     <main>
+        <h1 id="tituloSorteio">Número da sorte</h1>
         <div id="container">
-            <h1>Número da sorte</h1>
+            <button id="voltar" class="esconder"><i class="fi fi-rr-arrow-small-left"></i></button>
+            <div id="tituloQuantidade" class="esconder">
+               <p id="quantidadeNumerosParagrafo" ></p> 
+            </div>
             <div id="numeroContainer">
                 
                 <h2 id="numero">🎲</h2>
 
-
+                
             </div>
-            <button id="btnSorteio">PLAY</button>
-            <p id="legenda">Números de 00 á 99</p>
+            
+            <div id="modoDeJogo">
+                
+                <h3>Quantidade de números <br> Sorteados</h3>
+
+                <div id="quantidadeInpuBtn">
+                    <input type="number" name="num" id="quantidade">
+                    <button id="add">adicionar</button>
+                </div>
+                
+            </div>
+            <button id="btnSorteio" class="esconder">Começar sorteio</button>
+            
         </div>
-        
+       
     </main>
   
     
