@@ -127,6 +127,8 @@ add.addEventListener("click", () => {
     numero.innerHTML ="🎲"
     
     if (quantidadeInput.value == "") {
+        numero.innerHTML ="❌"
+        console.log("Digite um número")
         modoDeJogo.classList.remove("esconder")
         botao.classList.add("esconder");
         voltar.classList.add("esconder")
@@ -139,7 +141,7 @@ add.addEventListener("click", () => {
         /* tituloSorteio.classList.add("esconder") */
         modoDeJogo.classList.add("esconder")
     }
-
+    
     let quantidade = quantidadeInput.value
     quantidadeNumerosParagrafo.innerHTML ="Séra sorteado "+quantidade+" números"
 
